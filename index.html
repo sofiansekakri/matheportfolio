@@ -433,8 +433,14 @@ x = <span style="color:orange;">7</span>
     
     </div>
   <script>
-    document.querySelector('#aufloesen').addEventListener("touchstart", rechnung);
-    document.querySelector('#aufloesen1').addEventListener("touchstart", rechnung1);
+   document.querySelector('#aufloesen').addEventListener("touchstart", function(event) {
+  event.preventDefault();
+  rechnung();
+});
+document.querySelector('#aufloesen1').addEventListener("touchstart", function(event) {
+  event.preventDefault();
+  rechnung1();
+});
     document.querySelector('#aufloesen').addEventListener("click", rechnung);
     document.querySelector('#aufloesen1').addEventListener("click", rechnung1);
     //Aufgabe 1
