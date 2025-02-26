@@ -1,0 +1,200 @@
+  body {
+      background:dimgray;
+      color:white;
+      font-family:none;
+    }
+    .header {
+      text-align:center;
+      font-weight:bold;
+    }
+    
+    .header2, .header3 {
+      text-align:center;
+    }
+    .rechnung {
+      font-weight:bold;
+      text-align:center;
+    }
+    #calc1Input {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+    }
+    
+    #calc1Input:focus {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+      outline:none;
+    }
+    #correct {
+      font-weight:bold;
+      color:green;
+    }
+    
+    #wrong {
+      font-weight:bold;
+      color:red;
+    }
+    
+    #window {
+      width:200px;
+      height:120px;
+      border:solid gray 1px;
+      border-radius:10px;
+      font-family:none;
+    }
+    
+    #window {
+      margin-left:45px;
+      text-align:center;
+      background:dimgray;
+      
+    }
+    
+    #calc1Input {
+      font-family:none;
+      text-align:center;
+    }
+    
+    #aufloesen {
+      margin-top:10px;
+      border:solid gray 1px;
+      border-radius:8px;
+      height:30px;
+      width:80px;
+      font-weight:bold;
+      color:black;
+      background:white;
+      margin-left:105px;
+      font-family:Arial;
+    }
+    
+    .berechnung {
+      margin-top:20px;
+    }
+    
+    .richtig {
+      margin-top:25px;
+      font-size:30px;
+      font-weight:bold;
+    }
+    
+    #wrong {
+      margin-top:40px;
+    }
+    
+    #calc1Input1 {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+    }
+    
+    #calc1Input1:focus {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+      outline:none;
+    }
+    #correct1 {
+      font-weight:bold;
+      color:green;
+    }
+    
+    #wrong1 {
+      font-weight:bold;
+      color:red;
+    }
+    
+    #window1 {
+      width:200px;
+      height:120px;
+      border:solid gray 1px;
+      border-radius:10px;
+      font-family:none;
+    }
+    
+    #window1 {
+      margin-left:45px;
+      text-align:center;
+      background:dimgray;
+      
+    }
+    
+    #calc1Input1 {
+      font-family:none;
+      text-align:center;
+    }
+    
+    #aufloesen1 {
+      margin-top:10px;
+      border:solid gray 1px;
+      border-radius:8px;
+      height:30px;
+      width:80px;
+      font-weight:bold;
+      color:black;
+      background:white;
+      margin-left:105px;
+      font-family:Arial;
+    }
+    
+    .berechnung {
+      margin-top:20px;
+    }
+    
+    .richtig {
+      margin-top:25px;
+      font-size:30px;
+      font-weight:bold;
+    }
+    
+    #wrong1 {
+      margin-top:40px;
+    }
+    
+    .aufgabenstellung {
+      font-weight:bold;
+    }
+    
+    div.body {
+    background-color: gray;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 9px;
+    }
+    
+   .coordinate-system {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.axis {
+    stroke: black;
+    stroke-width: 1;
+}
+
+.label {
+    font-size: 12px;
+}
+
+.line {
+    stroke: red;
+    stroke-width: 2;
+    fill: none;
+}
+ svg {
+   background:white;
+   border: solid black 1px;
+   margin-left: -4px;
+ }
