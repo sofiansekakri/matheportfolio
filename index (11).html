@@ -1,0 +1,475 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fontlibrary.org//face/cmu-serif">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <style>
+    body {
+      background:dimgray;
+      color:white;
+      font-family:none;
+    }
+    .header {
+      text-align:center;
+      font-weight:bold;
+    }
+    
+    .header2, .header3 {
+      text-align:center;
+    }
+    .rechnung {
+      font-weight:bold;
+      text-align:center;
+    }
+    #calc1Input {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+    }
+    
+    #calc1Input:focus {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+      outline:none;
+    }
+    #correct {
+      font-weight:bold;
+      color:green;
+    }
+    
+    #wrong {
+      font-weight:bold;
+      color:red;
+    }
+    
+    #window {
+      width:200px;
+      height:120px;
+      border:solid gray 1px;
+      border-radius:10px;
+      font-family:none;
+    }
+    
+    #window {
+      margin-left:45px;
+      text-align:center;
+      background:dimgray;
+      
+    }
+    
+    #calc1Input {
+      font-family:none;
+      text-align:center;
+    }
+    
+    #aufloesen {
+      margin-top:10px;
+      border:solid gray 1px;
+      border-radius:8px;
+      height:30px;
+      width:80px;
+      font-weight:bold;
+      color:black;
+      background:white;
+      margin-left:105px;
+      font-family:Arial;
+    }
+    
+    .berechnung {
+      margin-top:20px;
+    }
+    
+    .richtig {
+      margin-top:25px;
+      font-size:30px;
+      font-weight:bold;
+    }
+    
+    #wrong {
+      margin-top:40px;
+    }
+    
+    #calc1Input1 {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+    }
+    
+    #calc1Input1:focus {
+      width:50px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+      outline:none;
+    }
+    #correct1 {
+      font-weight:bold;
+      color:green;
+    }
+    
+    #wrong1 {
+      font-weight:bold;
+      color:red;
+    }
+    
+    #window1 {
+      width:200px;
+      height:120px;
+      border:solid gray 1px;
+      border-radius:10px;
+      font-family:none;
+    }
+    
+    #window1 {
+      margin-left:45px;
+      text-align:center;
+      background:dimgray;
+      
+    }
+    
+    #calc1Input1 {
+      font-family:none;
+      text-align:center;
+    }
+    
+    #aufloesen1 {
+      margin-top:10px;
+      border:solid gray 1px;
+      border-radius:8px;
+      height:30px;
+      width:80px;
+      font-weight:bold;
+      color:black;
+      background:white;
+      margin-left:105px;
+      font-family:Arial;
+    }
+    
+    .berechnung {
+      margin-top:20px;
+    }
+    
+    .richtig {
+      margin-top:25px;
+      font-size:30px;
+      font-weight:bold;
+    }
+    
+    #wrong1 {
+      margin-top:40px;
+    }
+    
+    .aufgabenstellung {
+      font-weight:bold;
+    }
+    
+    div.body {
+    background-color: gray;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 9px;
+    }
+    
+   .coordinate-system {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.axis {
+    stroke: black;
+    stroke-width: 1;
+}
+
+.label {
+    font-size: 12px;
+}
+
+.line {
+    stroke: red;
+    stroke-width: 2;
+    fill: none;
+}
+ svg {
+   background:white;
+   border: solid black 1px;
+   margin-left: -4px;
+ }
+
+  </style>
+</head>
+
+<body>
+    <h1 class="header">Portfolio Mathematik</h1>
+    <h3 class="header3" style="color:#f8baba;">Sofian Sekakri</h3>
+  <div class="body">
+    <h2 class="header2" style="color:orange;font-weight:bold;">1. Zinseszins</h2>
+    
+    <h3 class="header3">Erklärung der Formel</h3>
+    <div class="section">
+  <div class="header">1. K (Endkapital)</div>
+  <div class="content">
+      Das Endkapital ist der Betrag nach der Berechnung. Es ergibt sich aus dem Anfangskapital und dem Wachstumsfaktor. Es zeigt den Endwert nach der Zeit.
+  </div>
+</div>
+<br>
+<div class="section">
+  <div class="header">2. K<sub>0</sub> (Anfangskapital)</div>
+  <div class="content">
+    Das Anfangskapital ist der Betrag zu Beginn. Es ist der Ausgangspunkt der Berechnung.<br>
+    <b>Beispiel: K<sub>0</sub> = 2300.</b>
+  </div>
+</div>
+<br>
+
+<div class="section">
+  <div class="header">3. q (Wachstumsfaktor)</div>
+  <div class="content">
+    Der Wachstumsfaktor zeigt, wie sich das Kapital verändert.Er wird durch den Zinssatz berechnet.<br>
+    <b>Zum Beispiel: q = 1.03 bei 3% Zinsen.</b>
+  </div>
+</div>
+<br>
+
+<div class="section">
+  <div class="header">4. n (Anzahl der Jahre/Perioden)</div>
+  <div class="content">
+    n ist die Anzahl der Jahre.
+    Je höher n, desto länger läuft die Verzinsung. <b>Für 5 Jahre ist n = 5.</b>
+  </div>
+</div>
+<br>
+
+<div class="section">
+  <div class="header">5. q<sup>n</sup> (Wachstumsfaktor hoch n)</div>
+  <div class="content">
+    Der Wachstumsfaktor wird über n Jahre angewendet. Es multipliziert das Kapital mehrfach.<br>
+    <b>Beispiel: (1.03)<sup>3</sup> für 3 Jahre.</b>
+  </div>
+</div>
+<br>
+<h3 class="header3">Beispiel für Zinseszins</h3>
+<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Achsen -->
+  <line x1="50" y1="350" x2="350" y2="350" stroke="black" stroke-width="2" />
+  <line x1="50" y1="350" x2="50" y2="50" stroke="black" stroke-width="2" />
+  
+  <!-- Achsenbeschriftungen -->
+  <text x="50" y="370" font-size="12" text-anchor="middle">0</text>
+  <text x="100" y="370" font-size="12" text-anchor="middle">2</text>
+  <text x="150" y="370" font-size="12" text-anchor="middle">4</text>
+  <text x="200" y="370" font-size="12" text-anchor="middle">6</text>
+  <text x="250" y="370" font-size="12" text-anchor="middle">8</text>
+  <text x="300" y="370" font-size="12" text-anchor="middle">10</text>
+
+  <text x="40" y="350" font-size="12" text-anchor="middle">9.700</text>
+  <text x="40" y="300" font-size="12" text-anchor="middle">10.000</text>
+  <text x="40" y="250" font-size="12" text-anchor="middle">10.400</text>
+  <text x="40" y="200" font-size="12" text-anchor="middle">10.800</text>
+  <text x="40" y="150" font-size="12" text-anchor="middle">11.200</text>
+  <text x="40" y="100" font-size="12" text-anchor="middle">11.600</text>
+  <text x="40" y="50" font-size="12" text-anchor="middle">12.000</text>
+
+  <!-- Exponentielle Kurve (Wachstum über 10 Jahre) -->
+  <path d="M50,350 C100,330, 150,280, 200,230 C250,170, 300,100, 350,50" stroke="blue" stroke-width="2" fill="transparent" />
+</svg>
+<h2 class="header2">Aufgabe 1</h2>
+<div style="text-align:center;">
+  Carlos legt an sein Sparkonto 2.300 Euro über 5 Jahre an. Der Zinssatz pro Jahr beträgt 0,89 Prozent. <b>Runde das Ergebnis auf 2 Kommastellen</b>.
+</div>
+    <ul>
+    <div style="font-weight:bold;">
+K<sub>0</sub> = <span style="color:orange;">2.300€</span>
+<div style="font-weight:bold;"><sub>n</sub> = <span style="color:orange;">5 Jahre</span></div>
+<div style="font-weight:bold;">q = <span style="color:orange;">1,089</span></div>
+    </ul>
+    <h3 class="rechnung">Rechnung:</h3>
+   <div class="rechnung">  
+    <span style="color:red;opacity:50%;">K</span><span style="color:orange;opacity:50%;"><sub>0</sub></span>  
+    *  
+    <span style="color:green;opacity:50%;">q</span><sup><span style="color:blue;opacity:50%;">n</span></sup>  
+    =  
+    <span style="color:red;opacity:50%;">K</span>  
+    <br>  
+    <br>  
+</div>
+    <div id="window">
+    <br>
+    <div class="aufgabenstellung">Berechne den Wert von <b>K</b></div><br>
+    <span class="berechnung">K = <input id="calc1Input">€</span><br><br>
+    <span id="wrong"></span>
+   </div>
+   <button id="aufloesen">Überprüfen</button>
+   
+   
+  </div>
+  
+   <div class="body">
+    <h2 class="header2" style="color:orange;font-weight:bold;">2. lineares Wachstum</h2>
+    
+    <h3 class="header3">Erklärung der Formel</h3>
+
+<div class="section">
+  <div class="header">1. y (Ergebnis)</div>
+  <div class="content">
+      Das ist der Wert, den man am Ende rausbekommt. Er setzt sich aus dem Anfangswert und der Veränderung über die Zeit zusammen.
+  </div>
+</div>
+<br>
+
+<div class="section">
+  <div class="header">2. b (Anfangswert)</div>
+  <div class="content">
+    Das ist der Startwert, bevor sich irgendwas verändert. Man fängt also damit an.<br>
+    <b>Beispiel: b = 500.</b>
+  </div>
+</div>
+<br>
+
+<div class="section">
+  <div class="header">3. m (Steigung/Veränderung pro Schritt)</div>
+  <div class="content">
+    Das zeigt, wie schnell oder langsam sich der Wert verändert. Je größer m, desto stärker steigt (oder fällt) der Wert.<br>
+    <b>Beispiel: m = 20 heißt, dass der Wert pro Schritt um 20 größer wird.</b>
+  </div>
+</div>
+<br>
+
+<div class="section">
+  <div class="header">4. x (Zeit/Anzahl der Schritte)</div>
+  <div class="content">
+    x gibt an, wie viele Schritte vergangen sind. Je größer x, desto mehr hat sich der Wert verändert.<br>
+    <b>Beispiel: x = 5 bedeutet, dass 5 Zeiteinheiten vergangen sind.</b>
+  </div>
+</div>
+<br>
+
+<div class="section">
+  <div class="header">5. m · x (Gesamtveränderung)</div>
+  <div class="content">
+    Hier wird die Veränderung pro Schritt mit der Anzahl der Schritte multipliziert. So sieht man, wie viel sich der Wert insgesamt verändert hat.<br>
+    <b>Beispiel: 20 · 3 = 60 bedeutet, dass der Wert nach 3 Schritten um 60 gestiegen ist.</b>
+  </div>
+  
+  
+
+      <h3 class="header3">Beispiel für eine lineare Funktion</h3>
+
+<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Achsen -->
+  <line x1="50" y1="350" x2="350" y2="350" stroke="black" stroke-width="2" />
+  <line x1="50" y1="350" x2="50" y2="50" stroke="black" stroke-width="2" />
+  
+  <!-- Achsenbeschriftungen -->
+  <text x="50" y="370" font-size="12" text-anchor="middle">0</text>
+  <text x="100" y="370" font-size="12" text-anchor="middle">1</text>
+  <text x="150" y="370" font-size="12" text-anchor="middle">2</text>
+  <text x="200" y="370" font-size="12" text-anchor="middle">3</text>
+  <text x="250" y="370" font-size="12" text-anchor="middle">4</text>
+  <text x="300" y="370" font-size="12" text-anchor="middle">5</text>
+  <text x="350" y="370" font-size="12" text-anchor="middle">6</text>
+  
+  <text x="40" y="350" font-size="12" text-anchor="middle">0</text>
+  <text x="40" y="300" font-size="12" text-anchor="middle">20</text>
+  <text x="40" y="250" font-size="12" text-anchor="middle">40</text>
+  <text x="40" y="200" font-size="12" text-anchor="middle">60</text>
+  <text x="40" y="150" font-size="12" text-anchor="middle">80</text>
+  <text x="40" y="100" font-size="12" text-anchor="middle">100</text>
+  <text x="40" y="50" font-size="12" text-anchor="middle">120</text>
+  
+  <!-- Linie für lineares Wachstum -->
+  <line x1="50" y1="350" x2="100" y2="300" stroke="blue" stroke-width="2" />
+  <line x1="100" y1="300" x2="150" y2="250" stroke="blue" stroke-width="2" />
+  <line x1="150" y1="250" x2="200" y2="200" stroke="blue" stroke-width="2" />
+  <line x1="200" y1="200" x2="250" y2="150" stroke="blue" stroke-width="2" />
+  <line x1="250" y1="150" x2="300" y2="100" stroke="blue" stroke-width="2" />
+</svg>
+<br>
+<br>
+  <div class="content">
+    Wie man im Beispiel sehen kann bleibt die Steigung <b>immer</b> Konstant und verändert sich über Zeit nicht. Es ist vergleichbar mit einem gleichbleibendem Taschengeld von bspw. 20€. Man hat nach insgesamt 3 Monaten 60€ bekommen. Die Summe, die man monatlich bekommt ändert sich jedoch nicht.
+  </div>
+  <h2 class="header2">Aufgabe 2: Kredithai</h2>
+<div style="text-align:center;">
+  Marlon leiht Juvarz 200 Euro. Diese Summe muss innerhalb von 1 Monat zurückgezahlt werden. Ist dies nicht der Fall schuldet Juvraz Marlon zusätzliche <b>31,70€</b> für jeden weiteren überzogenen Monat. Nach 8 Monaten entscheided sich Juvraz das Geld zurückzuzahlen. <b>Wie viel schuldet er Marlon?</b>
+</div>
+    <ul>
+    <div style="font-weight:bold;">
+x = <span style="color:orange;">7</span>
+<div style="font-weight:bold;">b = <span style="color:orange;">200</span></div>
+<div style="font-weight:bold;">m = <span style="color:orange;">31,70€</span></div>
+    </ul>
+    <h3 class="rechnung">Rechnung:</h3>
+<div class="rechnung">  
+    <span style="color:red;opacity:50%;">y</span> =  
+    <span style="color:orange;opacity:50%;">b</span> +  
+    <span style="color:yellow;opacity:50%;">m</span> *  
+    <span style="color:green;opacity:50%;">x</span>  
+    <br>  
+    <br>  
+</div>
+    <div id="window1">
+    <br>
+    <div class="aufgabenstellung">Berechne den Wert von <b>y</b></div><br>
+    <span class="berechnung">y = <input id="calc1Input1">€</span><br><br>
+    <span id="wrong1"></span>
+   </div>
+   <button id="aufloesen1">Überprüfen</button>
+  </div>
+  </div>
+
+   <div class="body">
+    <h2 class="header2" style="color:orange;font-weight:bold;">3. Potenzen</h2>
+    
+    
+    </div>
+  <script>
+document.querySelector('#aufloesen').addEventListener("touchstart", rechnung);
+    document.querySelector('#aufloesen1').addEventListener("touchstart", rechnung1);
+    document.querySelector('#aufloesen').addEventListener("click", rechnung);
+    document.querySelector('#aufloesen1').addEventListener("click", rechnung1);
+    //Aufgabe 1
+    function rechnung() {
+      const result1 = document.querySelector('#calc1Input').value;
+      if (result1 === "2404,19") {
+        document.querySelector('#calc1Input').setAttribute('disabled', 'disabled')
+        document.querySelector('#wrong').innerHTML = "";
+        document.querySelector('#window').innerHTML = "<div class='richtig'>" + "Korrekte Antwort!" + "</div>";
+        document.querySelector('#window').style.background = 'green';
+        document.querySelector('#window').style.borderColor = 'green';
+        document.querySelector('#aufloesen').setAttribute('disabled', 'disabled');
+      } else {
+        document.querySelector('#wrong').innerHTML = "Falsche Antwort!";
+        document.querySelector('#window').style.borderColor = 'red';
+      }
+    }
+    //Aufgabe 2
+    function rechnung1() {
+      const result11 = document.querySelector('#calc1Input1').value;
+      if (result11 === "421,90") {
+        document.querySelector('#calc1Input1').setAttribute('disabled', 'disabled')
+        document.querySelector('#wrong1').innerHTML = "";
+        document.querySelector('#window1').innerHTML = "<div class='richtig'>" + "Korrekte Antwort!" + "</div>";
+        document.querySelector('#window1').style.background = 'green';
+        document.querySelector('#window1').style.borderColor = 'green';
+        document.querySelector('#aufloesen1').setAttribute('disabled', 'disabled');
+      } else {
+        document.querySelector('#wrong1').innerHTML = "Falsche Antwort!";
+        document.querySelector('#window1').style.borderColor = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
