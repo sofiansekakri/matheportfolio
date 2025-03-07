@@ -521,8 +521,11 @@ document.querySelector('#aufloesen1').addEventListener("touchstart", function(ev
   event.preventDefault();
   rechnung1();
 });
-    document.querySelector('#aufloesen').addEventListener("click", rechnung);
-    document.querySelector('#aufloesen1').addEventListener("click", rechnung1);
+document.querySelector('#aufloesen2').addEventListener("touchstart", function(event) {
+  event.preventDefault();
+  rechnung2();
+});
+
     //Aufgabe 1
     function rechnung() {
       const result1 = document.querySelector('#calc1Input').value;
@@ -555,7 +558,7 @@ document.querySelector('#aufloesen1').addEventListener("touchstart", function(ev
     }
 
 //Aufgabe 3
-    function rechnung1() {
+    function rechnung3() {
       const result2 = document.querySelector('#calc1Input2').value;
       if (result2 === "421,90") {
         document.querySelector('#calc1Input2').setAttribute('disabled', 'disabled')
