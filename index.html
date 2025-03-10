@@ -520,6 +520,8 @@ document.querySelector('#aufloesen2').addEventListener("touchstart", function(ev
 });
 
 function daktylus() {
+
+if (result1 === "daktylus" && result2 === "daktylus" && result3 === "daktylus") {
     let mainIMG = document.createElement('img');
     mainIMG.setAttribute('height', '100%');
     mainIMG.setAttribute('width', '100%');
@@ -527,6 +529,7 @@ function daktylus() {
 
     document.body.innerHTML = ''; 
     document.body.appendChild(mainIMG);
+   }
 }
     //Aufgabe 1
     function rechnung() {
