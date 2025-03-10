@@ -540,7 +540,7 @@ document.getElementsById('code').value;
         document.querySelector('#window').style.background = 'green';
         document.querySelector('#window').style.borderColor = 'green';
         document.querySelector('#aufloesen').setAttribute('disabled', 'disabled');
-      } if else (result1 === "daktylus") {
+      } else if (result1 === "daktylus") {
  daktylus();
 } else {
         document.querySelector('#wrong').innerHTML = "Falsche Antwort!";
@@ -578,18 +578,6 @@ document.getElementsById('code').value;
         document.querySelector('#window2').style.borderColor = 'red';
       }
     }
-
-
-
-function daktylus() {
-   const daktylusvalue =              
-document.getElementsById('code').value;
-   const main = document.createElement('img');
-   main.setAttribute('height', '100%');
-   main.setAttribute('width', '100%');
-   main.setAttribute('src', 'https://he.edumaps.de/file/12201684682283142054.jpg/obpa4sd');
-   document.write(main);
-}
   </script>
 </body>
 </html>
