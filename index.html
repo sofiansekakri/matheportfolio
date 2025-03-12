@@ -509,7 +509,7 @@ x = <span style="color:orange;">7</span>
 
 
 <div class="body">
-    <h2 class="header2" style="color:green;font-weight:bold;">3. Wurzeln</h2>
+    <h2 class="header2" style="color:green;font-weight:bold;">4. Wurzeln</h2>
     <h3 class="header3">Erklärung der Wurzelregel</h3>
 
     <div class="section">
@@ -534,7 +534,7 @@ x = <span style="color:orange;">7</span>
         <div class="header">3. Wurzelwert</div>
         <div class="content">
             Das Ergebnis einer Wurzelberechnung ist die Zahl, die mit sich selbst (je nach Wurzelexponent) multipliziert den Radikanden ergibt.<br>
-            <b>Beispiel: √16 = 4, da 4 * 4 = 16.</b>
+            <b>Beispiel: √16 = 4, weil 4 * 4 = 16.</b>
         </div>
     </div>
     <br>
@@ -553,10 +553,11 @@ x = <span style="color:orange;">7</span>
 
     <h2 class="header2">Aufgabe 4</h2>
     <h3 class="rechnung">Rechnung:</h3>
+    Berechne folgende Aufgabe. Runde auf 2 Nachkommastellen.
     <div id="window2" class="window">
         <br>
         <div class="aufgabenstellung">
-            <span class="berechnung">Berechne 30 + √81<br>
+            <span class="berechnung">Berechne 9 + √37<br>
                 <input id="calc1Input3">
             </span>
             <br><br>
@@ -650,7 +651,7 @@ function daktylus() {
 //Aufgabe 4
     function rechnung3() {
       const result3 = document.querySelector('#calc1Input3').value;
-      if (result3 === "542") {
+      if (result3 === "15,08") {
         document.querySelector('#calc1Input3').setAttribute('disabled', 'disabled')
         document.querySelector('#wrong3').innerHTML = "";
         document.querySelector('#window3').innerHTML = "<div class='richtig'>" + "Korrekte Antwort!" + "</div>";
