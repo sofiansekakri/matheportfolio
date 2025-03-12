@@ -115,6 +115,24 @@
       background:gray;
       color:white;
       outline:none;
+
+    textarea {
+      width:80px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+      height:60px;
+    }
+    
+    textarea:focus {
+      width:80px;
+      border-radius:2px;
+      border:solid lightgray 1px;
+      background:gray;
+      color:white;
+      outline:none;
+      height:60px;
     }
     #correct1 {
       font-weight:bold;
@@ -608,19 +626,10 @@ x = <span style="color:orange;">7</span>
 
 <footer>
     <div class="footer-content">
-        <div class="footer-icons">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="HTML">
-                <i class="fab fa-html5"></i>
-            </a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="CSS">
-                <i class="fab fa-css3-alt"></i>
-            </a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="JavaScript">
-                <i class="fab fa-js"></i>
-            </a>
-            <a href="https://github.com" target="_blank" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
+        <h2 class="header2">Anonymes Feedback</h2>
+        <div style="height:50px;border:solid dimgray 5px;background:dimgray;">
+          <textarea id="msg" type="text"></textarea>
+<button id="submit">Abschicken</button>
         </div>
         <p><a href="mailto:msekakri@gmail.com">msekakri@gmail.com</a></p>
         <p style="margin-top:20px;background:dimgray;border:solid dimgray 1px;border-radius:5px;height:70px;"><b>
