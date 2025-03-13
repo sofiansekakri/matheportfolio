@@ -670,7 +670,7 @@ Im Großen und Ganzen bin ich mit meinem Portfolio sehr zufrieden.
 >
     <textarea 
         id="message" 
-        name="Nachricht" 
+        name="message" 
         placeholder="Feedback" 
         style="width: 90%; height: 70px; margin-bottom: 15px; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; resize: none;font-family: 'Calibri', sans-serif;"
     ></textarea>
@@ -681,7 +681,7 @@ Im Großen und Ganzen bin ich mit meinem Portfolio sehr zufrieden.
             id="messagesubmit" 
             style="padding: 10px 20px; background-color: black; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;font-family: 'Calibri', sans-serif;width:105px;margin-left:-27px;  "
             onmouseover="this.style.backgroundColor='#0056b3'" 
-            onmouseout="this.style.backgroundColor='#007BFF'"
+            onmouseout="this.style.backgroundColor='black'"
         >
             Verschicken
         </button>
@@ -697,7 +697,7 @@ Dieses Portfolio wurde von Sofian Sekakri mit <a href="https://de.wikipedia.org/
 </footer>
 <script>
                 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form.fs-form.aboutme");
+    const form = document.querySelector("form.fs-form");
     const discordWebhookUrl = "https://discord.com/api/webhooks/1333506393147441182/cWokHRQZDjHyJZZZwBPeiK1ZZKf1-2_Prwa7AZEzMnO-mvBbnVeZz-WrzjJVfgvQZtNB";
 
     form.addEventListener("submit", function (event) {
